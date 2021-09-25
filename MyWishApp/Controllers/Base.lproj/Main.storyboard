@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AAU-BT-gnE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,70 +16,149 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dH7-T5-vrn">
-                                <rect key="frame" x="76" y="271" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzq-xP-c6n">
-                                <rect key="frame" x="76" y="332" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TWC-wi-NYe">
-                                <rect key="frame" x="76" y="390" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfQ-5C-Hjx">
-                                <rect key="frame" x="76" y="454" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azp-0p-gvC">
-                                <rect key="frame" x="76" y="512" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fso-ON-clu">
-                                <rect key="frame" x="76" y="571" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHN-Y2-Tg4">
-                                <rect key="frame" x="69" y="638" width="276" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyI-PX-o0k">
-                                <rect key="frame" x="184" y="709" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDU-x5-mYN"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146.37681159420291" y="87.723214285714278"/>
+            <point key="canvasLocation" x="-552" y="13"/>
+        </scene>
+        <!--Wish View Controller-->
+        <scene sceneID="kY7-qE-JC1">
+            <objects>
+                <viewController storyboardIdentifier="WishViewController" id="OfA-5S-xLQ" userLabel="Wish View Controller" customClass="WishViewController" customModule="MyWishApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7i-a7-Hfc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vwU-38-0Ll">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dl7-te-wLg">
+                                <rect key="frame" x="307" y="709" width="81" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45"/>
+                                </state>
+                                <connections>
+                                    <action selector="addWishButtonAction:" destination="8Nh-BR-2rd" eventType="touchUpInside" id="B84-Ro-R7o"/>
+                                    <action selector="addWishButtonAction:" destination="OfA-5S-xLQ" eventType="touchUpInside" id="pUC-GA-Wuo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ini-x0-WbB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ini-x0-WbB" firstAttribute="bottom" secondItem="vwU-38-0Ll" secondAttribute="bottom" id="Q8N-SV-Bdx"/>
+                            <constraint firstItem="vwU-38-0Ll" firstAttribute="leading" secondItem="Ini-x0-WbB" secondAttribute="leading" id="TxN-K8-Qn6"/>
+                            <constraint firstItem="Ini-x0-WbB" firstAttribute="trailing" secondItem="vwU-38-0Ll" secondAttribute="trailing" id="glI-QY-37s"/>
+                            <constraint firstItem="vwU-38-0Ll" firstAttribute="top" secondItem="Ini-x0-WbB" secondAttribute="top" id="k9b-K8-Clo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="WISH" image="star" catalog="system" id="eNK-Mm-Wfl"/>
+                    <connections>
+                        <outlet property="addWishButton" destination="dl7-te-wLg" id="QjA-Yn-FDf"/>
+                        <outlet property="tableView" destination="vwU-38-0Ll" id="iOU-gV-3Gw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifE-BZ-36d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="317"/>
+        </scene>
+        <!--Tasks View Controller-->
+        <scene sceneID="TcH-Fe-0E4">
+            <objects>
+                <viewController storyboardIdentifier="TasksViewController" id="8Nh-BR-2rd" userLabel="Tasks View Controller" customClass="TasksViewController" customModule="MyWishApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cN-cM-Xi8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xzp-2B-3Ip">
+                                <rect key="frame" x="0.0" y="114" width="414" height="699"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aEs-zh-3Fy">
+                                <rect key="frame" x="307" y="709" width="81" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45"/>
+                                </state>
+                                <connections>
+                                    <action selector="addWishButtonAction:" destination="8Nh-BR-2rd" eventType="touchUpInside" id="xIr-vn-gFG"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R0v-eR-gip">
+                                <rect key="frame" x="0.0" y="44" width="414" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="pN6-wW-y39"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="baby-boy"/>
+                                    <segment title="" image="baby-girl"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gwv-Wb-EW7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xzp-2B-3Ip" firstAttribute="trailing" secondItem="Gwv-Wb-EW7" secondAttribute="trailing" id="EdC-Eo-rqC"/>
+                            <constraint firstItem="xzp-2B-3Ip" firstAttribute="bottom" secondItem="Gwv-Wb-EW7" secondAttribute="bottom" id="ILL-qY-gTm"/>
+                            <constraint firstItem="R0v-eR-gip" firstAttribute="leading" secondItem="Gwv-Wb-EW7" secondAttribute="leading" id="MHn-cQ-Sv2"/>
+                            <constraint firstItem="xzp-2B-3Ip" firstAttribute="top" secondItem="R0v-eR-gip" secondAttribute="bottom" id="PYU-Jy-rdr"/>
+                            <constraint firstItem="R0v-eR-gip" firstAttribute="top" secondItem="Gwv-Wb-EW7" secondAttribute="top" id="UiK-An-WA3"/>
+                            <constraint firstItem="xzp-2B-3Ip" firstAttribute="leading" secondItem="Gwv-Wb-EW7" secondAttribute="leading" id="Zy6-vv-kYx"/>
+                            <constraint firstItem="R0v-eR-gip" firstAttribute="trailing" secondItem="Gwv-Wb-EW7" secondAttribute="trailing" id="oMM-rB-mYt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TASKS LIST" image="checkmark.square" catalog="system" id="cPR-UB-t0E" userLabel="TASKS LIST"/>
+                    <connections>
+                        <outlet property="addWishButton" destination="aEs-zh-3Fy" id="mIG-on-EZ2"/>
+                        <outlet property="segmentControl" destination="R0v-eR-gip" id="A48-fT-c6f"/>
+                        <outlet property="tableView" destination="xzp-2B-3Ip" id="Ddn-Ud-gPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6t9-sO-kIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.6666666666667" y="-289.28571428571428"/>
+        </scene>
+        <!--Main Tab Bar-->
+        <scene sceneID="OJV-e5-VXS">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBar" id="AAU-BT-gnE" customClass="MainTabBar" customModule="MyWishApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RCQ-Aa-mcs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Nh-BR-2rd" kind="relationship" relationship="viewControllers" id="0iG-bh-EGw"/>
+                        <segue destination="OfA-5S-xLQ" kind="relationship" relationship="viewControllers" id="uNi-QZ-SYi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UY8-gr-Ahh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="13"/>
         </scene>
     </scenes>
     <resources>
+        <image name="baby-boy" width="48" height="48"/>
+        <image name="baby-girl" width="48" height="48"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

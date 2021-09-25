@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		920C1F5926EFD2BB00F73BDD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C1F5826EFD2BB00F73BDD /* TokenModel.swift */; };
+		920C1F9726F37DAA00F73BDD /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C1F9626F37DAA00F73BDD /* TasksViewController.swift */; };
+		920C1F9B26F389EE00F73BDD /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C1F9A26F389ED00F73BDD /* MainTabBar.swift */; };
 		921D835C26D18CE60074E91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D835B26D18CE60074E91F /* AppDelegate.swift */; };
 		921D835E26D18CE60074E91F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D835D26D18CE60074E91F /* SceneDelegate.swift */; };
 		921D836026D18CE60074E91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D835F26D18CE60074E91F /* ViewController.swift */; };
@@ -20,9 +23,16 @@
 		9241679726E3F33200A2AF18 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241679426E3F33200A2AF18 /* NetworkDataFetcher.swift */; };
 		925E1C6526EA2F79000D5EDA /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E1C6426EA2F78000D5EDA /* RequestModel.swift */; };
 		925E1C6926EA2FAE000D5EDA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E1C6826EA2FAE000D5EDA /* ResponseModel.swift */; };
+		928ECCB926F9F3B1003457E4 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928ECCB826F9F3B1003457E4 /* WishViewController.swift */; };
+		92DB0F8B26FDB9CF009E8C47 /* WishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0F8926FDB9CF009E8C47 /* WishCell.swift */; };
+		92DB0F8C26FDB9CF009E8C47 /* WishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DB0F8A26FDB9CF009E8C47 /* WishCell.xib */; };
+		92DB0F9626FDE925009E8C47 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0F9526FDE925009E8C47 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		920C1F5826EFD2BB00F73BDD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		920C1F9626F37DAA00F73BDD /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		920C1F9A26F389ED00F73BDD /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		921D835826D18CE60074E91F /* MyWishApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWishApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921D835B26D18CE60074E91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		921D835D26D18CE60074E91F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +48,10 @@
 		9241679426E3F33200A2AF18 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		925E1C6426EA2F78000D5EDA /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		925E1C6826EA2FAE000D5EDA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		928ECCB826F9F3B1003457E4 /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		92DB0F8926FDB9CF009E8C47 /* WishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCell.swift; sourceTree = "<group>"; };
+		92DB0F8A26FDB9CF009E8C47 /* WishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishCell.xib; sourceTree = "<group>"; };
+		92DB0F9526FDE925009E8C47 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		920C1F7626F35ACA00F73BDD /* Tasks Controller */ = {
+			isa = PBXGroup;
+			children = (
+				920C1F9626F37DAA00F73BDD /* TasksViewController.swift */,
+			);
+			path = "Tasks Controller";
+			sourceTree = "<group>";
+		};
+		920C1F8226F3608A00F73BDD /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				920C1F9A26F389ED00F73BDD /* MainTabBar.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 		921D834F26D18CE60074E91F = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +100,7 @@
 		921D835A26D18CE60074E91F /* MyWishApp */ = {
 			isa = PBXGroup;
 			children = (
+				92DB0F9126FDE7A1009E8C47 /* Extentions */,
 				9241679126E3F31100A2AF18 /* Networking */,
 				921D837126D18EA50074E91F /* Controllers */,
 				921D837026D18E890074E91F /* Support Files */,
@@ -92,9 +123,12 @@
 		921D837126D18EA50074E91F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				921D837226D18ED50074E91F /* Registration Controller */,
+				920C1F8226F3608A00F73BDD /* MainTabBar */,
 				921D835F26D18CE60074E91F /* ViewController.swift */,
 				921D836126D18CE60074E91F /* Main.storyboard */,
-				921D837226D18ED50074E91F /* Registration Controller */,
+				920C1F7626F35ACA00F73BDD /* Tasks Controller */,
+				928ECCB726F9F37C003457E4 /* Wish Controller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,8 +158,35 @@
 			children = (
 				925E1C6426EA2F78000D5EDA /* RequestModel.swift */,
 				925E1C6826EA2FAE000D5EDA /* ResponseModel.swift */,
+				920C1F5826EFD2BB00F73BDD /* TokenModel.swift */,
 			);
 			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		928ECCB726F9F37C003457E4 /* Wish Controller */ = {
+			isa = PBXGroup;
+			children = (
+				928ECCB826F9F3B1003457E4 /* WishViewController.swift */,
+				92DB0F8826FDB925009E8C47 /* Wish Cell */,
+			);
+			path = "Wish Controller";
+			sourceTree = "<group>";
+		};
+		92DB0F8826FDB925009E8C47 /* Wish Cell */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0F8926FDB9CF009E8C47 /* WishCell.swift */,
+				92DB0F8A26FDB9CF009E8C47 /* WishCell.xib */,
+			);
+			path = "Wish Cell";
+			sourceTree = "<group>";
+		};
+		92DB0F9126FDE7A1009E8C47 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0F9526FDE925009E8C47 /* Extentions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				921D837626D18F060074E91F /* RegistrationViewController.xib in Resources */,
+				92DB0F8C26FDB9CF009E8C47 /* WishCell.xib in Resources */,
 				921D836826D18CED0074E91F /* LaunchScreen.storyboard in Resources */,
 				921D836526D18CED0074E91F /* Assets.xcassets in Resources */,
 				921D836326D18CE60074E91F /* Main.storyboard in Resources */,
@@ -199,14 +261,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DB0F8B26FDB9CF009E8C47 /* WishCell.swift in Sources */,
+				920C1F9B26F389EE00F73BDD /* MainTabBar.swift in Sources */,
+				92DB0F9626FDE925009E8C47 /* Extentions.swift in Sources */,
 				9241679726E3F33200A2AF18 /* NetworkDataFetcher.swift in Sources */,
 				9241679526E3F33200A2AF18 /* NetworkService.swift in Sources */,
+				920C1F9726F37DAA00F73BDD /* TasksViewController.swift in Sources */,
 				921D837526D18F060074E91F /* RegistrationViewController.swift in Sources */,
+				920C1F5926EFD2BB00F73BDD /* TokenModel.swift in Sources */,
 				921D836026D18CE60074E91F /* ViewController.swift in Sources */,
 				925E1C6526EA2F79000D5EDA /* RequestModel.swift in Sources */,
 				921D835C26D18CE60074E91F /* AppDelegate.swift in Sources */,
 				925E1C6926EA2FAE000D5EDA /* ResponseModel.swift in Sources */,
 				921D835E26D18CE60074E91F /* SceneDelegate.swift in Sources */,
+				928ECCB926F9F3B1003457E4 /* WishViewController.swift in Sources */,
 				9241679626E3F33200A2AF18 /* DataFetcherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

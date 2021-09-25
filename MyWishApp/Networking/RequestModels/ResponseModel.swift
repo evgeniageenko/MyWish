@@ -12,15 +12,15 @@ struct Families: Codable {
     let id: Int?
     let name: String?
 }
-struct UserPostResponse: Codable{
+struct UserPostResponse: Codable {
     let id: Int
-    let email: String
-    let password: String
-    let firstName: String
-    let lastName: String
-    let dateOfBirth: String
-    let role: String
-    let gender: String
+    let email: String?
+    let password: String?
+    let firstName: String?
+    let lastName: String?
+    let dateOfBirth: String?
+    let role: String?
+    let gender: String?
     let families: [Families]
 }
 

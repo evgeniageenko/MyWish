@@ -15,6 +15,7 @@
                 <outlet property="firtNameTextfield" destination="y8g-el-q3R" id="AWf-h6-EMl"/>
                 <outlet property="genderTextfield" destination="KFs-yB-8DM" id="2az-h6-wng"/>
                 <outlet property="lastNameTextfield" destination="kjF-7l-VON" id="Wk6-n9-RQZ"/>
+                <outlet property="loginButton" destination="23c-35-FC6" id="x4u-kK-cZ8"/>
                 <outlet property="passwordTextfield" destination="pGI-sc-kwq" id="OrO-In-S9v"/>
                 <outlet property="roleTextfield" destination="WKh-jA-L0N" id="fxd-tC-dEm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -38,10 +39,10 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23c-35-FC6">
-                    <rect key="frame" x="65" y="595" width="269" height="30"/>
+                    <rect key="frame" x="65" y="578" width="269" height="47"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="CREATE ACCOUNT">
                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -59,7 +60,7 @@
                     <rect key="frame" x="65" y="255" width="269" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weS-aZ-yul">
                     <rect key="frame" x="65" y="419" width="269" height="34"/>

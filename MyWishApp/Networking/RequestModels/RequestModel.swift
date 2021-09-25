@@ -37,3 +37,12 @@ struct WishPostRequest: Codable {
     let name: String
     let description: String
 }
+
+
+//MARK: - GET TOKEN - POST REQUEST
+struct getTokenPostRequest: Codable {
+    var client_id = "ui-app"
+    let username: String
+    let password: String
+    var grant_type = "password"
+}

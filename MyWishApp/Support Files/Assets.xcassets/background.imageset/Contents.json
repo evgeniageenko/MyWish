@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "background.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
