@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vwU-38-0Ll">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="389"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dl7-te-wLg">
@@ -49,25 +49,37 @@
                                     <action selector="addWishButtonAction:" destination="OfA-5S-xLQ" eventType="touchUpInside" id="pUC-GA-Wuo"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-HH-8Q2">
+                                <rect key="frame" x="0.0" y="433" width="414" height="380"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="pYp-gp-3jQ"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ini-x0-WbB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ini-x0-WbB" firstAttribute="bottom" secondItem="vwU-38-0Ll" secondAttribute="bottom" id="Q8N-SV-Bdx"/>
-                            <constraint firstItem="vwU-38-0Ll" firstAttribute="leading" secondItem="Ini-x0-WbB" secondAttribute="leading" id="TxN-K8-Qn6"/>
-                            <constraint firstItem="Ini-x0-WbB" firstAttribute="trailing" secondItem="vwU-38-0Ll" secondAttribute="trailing" id="glI-QY-37s"/>
-                            <constraint firstItem="vwU-38-0Ll" firstAttribute="top" secondItem="Ini-x0-WbB" secondAttribute="top" id="k9b-K8-Clo"/>
+                            <constraint firstItem="vwU-38-0Ll" firstAttribute="trailing" secondItem="Ini-x0-WbB" secondAttribute="trailing" id="1YV-vh-dwu"/>
+                            <constraint firstItem="vwU-38-0Ll" firstAttribute="top" secondItem="Ini-x0-WbB" secondAttribute="top" id="ESo-yB-sRc"/>
+                            <constraint firstItem="vwU-38-0Ll" firstAttribute="leading" secondItem="Ini-x0-WbB" secondAttribute="leading" id="QoP-oF-nWX"/>
+                            <constraint firstItem="aRO-HH-8Q2" firstAttribute="bottom" secondItem="Ini-x0-WbB" secondAttribute="bottom" id="SGr-am-J8d"/>
+                            <constraint firstItem="aRO-HH-8Q2" firstAttribute="leading" secondItem="Ini-x0-WbB" secondAttribute="leading" id="Zu4-XD-uDZ"/>
+                            <constraint firstItem="aRO-HH-8Q2" firstAttribute="trailing" secondItem="Ini-x0-WbB" secondAttribute="trailing" id="eGu-bM-AGn"/>
+                            <constraint firstItem="aRO-HH-8Q2" firstAttribute="top" secondItem="vwU-38-0Ll" secondAttribute="bottom" id="lhG-PM-7RT"/>
+                            <constraint firstItem="aRO-HH-8Q2" firstAttribute="top" secondItem="vwU-38-0Ll" secondAttribute="bottom" id="mmK-pd-ZLh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="WISH" image="star" catalog="system" id="eNK-Mm-Wfl"/>
                     <connections>
                         <outlet property="addWishButton" destination="dl7-te-wLg" id="QjA-Yn-FDf"/>
-                        <outlet property="tableView" destination="vwU-38-0Ll" id="iOU-gV-3Gw"/>
+                        <outlet property="firstTableView" destination="vwU-38-0Ll" id="iOU-gV-3Gw"/>
+                        <outlet property="secondTableView" destination="aRO-HH-8Q2" id="eTZ-SP-39g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifE-BZ-36d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1567" y="317"/>
+            <point key="canvasLocation" x="1566.6666666666667" y="316.07142857142856"/>
         </scene>
         <!--Tasks View Controller-->
         <scene sceneID="TcH-Fe-0E4">

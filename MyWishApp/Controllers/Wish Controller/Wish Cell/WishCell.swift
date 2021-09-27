@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Wish {
+struct WishCellModel {
     var name: String
     var progress: Float
 }
@@ -20,11 +20,15 @@ class WishCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-
-
-
     }
 
+    
+    func setupWithModel(model: WishCellModel) {
+        wishNameLabel.text = model.name
+        progressView.progress = model.progress
+     
+    }
+    
 
     override class func description() -> String {
         return "WishCell"

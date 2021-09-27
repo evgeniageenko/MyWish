@@ -14,7 +14,6 @@
 		921D835E26D18CE60074E91F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D835D26D18CE60074E91F /* SceneDelegate.swift */; };
 		921D836026D18CE60074E91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D835F26D18CE60074E91F /* ViewController.swift */; };
 		921D836326D18CE60074E91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D836126D18CE60074E91F /* Main.storyboard */; };
-		921D836526D18CED0074E91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921D836426D18CED0074E91F /* Assets.xcassets */; };
 		921D836826D18CED0074E91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D836626D18CED0074E91F /* LaunchScreen.storyboard */; };
 		921D837526D18F060074E91F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D837326D18F060074E91F /* RegistrationViewController.swift */; };
 		921D837626D18F060074E91F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921D837426D18F060074E91F /* RegistrationViewController.xib */; };
@@ -27,6 +26,11 @@
 		92DB0F8B26FDB9CF009E8C47 /* WishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0F8926FDB9CF009E8C47 /* WishCell.swift */; };
 		92DB0F8C26FDB9CF009E8C47 /* WishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DB0F8A26FDB9CF009E8C47 /* WishCell.xib */; };
 		92DB0F9626FDE925009E8C47 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0F9526FDE925009E8C47 /* Extentions.swift */; };
+		92FED28B2700DE04001A9963 /* WishProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FED2892700DE04001A9963 /* WishProfileCell.swift */; };
+		92FED28C2700DE04001A9963 /* WishProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FED28A2700DE04001A9963 /* WishProfileCell.xib */; };
+		92FED29127025976001A9963 /* AddWishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FED28F27025976001A9963 /* AddWishViewController.swift */; };
+		92FED29227025976001A9963 /* AddWishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FED29027025976001A9963 /* AddWishViewController.xib */; };
+		92FED29B27026048001A9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FED29A27026048001A9963 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +42,6 @@
 		921D835D26D18CE60074E91F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		921D835F26D18CE60074E91F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		921D836226D18CE60074E91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		921D836426D18CED0074E91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921D836726D18CED0074E91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		921D836926D18CED0074E91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921D837326D18F060074E91F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +55,11 @@
 		92DB0F8926FDB9CF009E8C47 /* WishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCell.swift; sourceTree = "<group>"; };
 		92DB0F8A26FDB9CF009E8C47 /* WishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishCell.xib; sourceTree = "<group>"; };
 		92DB0F9526FDE925009E8C47 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		92FED2892700DE04001A9963 /* WishProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishProfileCell.swift; sourceTree = "<group>"; };
+		92FED28A2700DE04001A9963 /* WishProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishProfileCell.xib; sourceTree = "<group>"; };
+		92FED28F27025976001A9963 /* AddWishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishViewController.swift; sourceTree = "<group>"; };
+		92FED29027025976001A9963 /* AddWishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWishViewController.xib; sourceTree = "<group>"; };
+		92FED29A27026048001A9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +123,7 @@
 				921D836626D18CED0074E91F /* LaunchScreen.storyboard */,
 				921D835B26D18CE60074E91F /* AppDelegate.swift */,
 				921D835D26D18CE60074E91F /* SceneDelegate.swift */,
-				921D836426D18CED0074E91F /* Assets.xcassets */,
+				92FED29A27026048001A9963 /* Assets.xcassets */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -167,7 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				928ECCB826F9F3B1003457E4 /* WishViewController.swift */,
+				92FED2882700DDCC001A9963 /* Wish Profile Cell */,
 				92DB0F8826FDB925009E8C47 /* Wish Cell */,
+				92FED28E27025887001A9963 /* Add Wish Controller */,
 			);
 			path = "Wish Controller";
 			sourceTree = "<group>";
@@ -187,6 +197,24 @@
 				92DB0F9526FDE925009E8C47 /* Extentions.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		92FED2882700DDCC001A9963 /* Wish Profile Cell */ = {
+			isa = PBXGroup;
+			children = (
+				92FED2892700DE04001A9963 /* WishProfileCell.swift */,
+				92FED28A2700DE04001A9963 /* WishProfileCell.xib */,
+			);
+			path = "Wish Profile Cell";
+			sourceTree = "<group>";
+		};
+		92FED28E27025887001A9963 /* Add Wish Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92FED28F27025976001A9963 /* AddWishViewController.swift */,
+				92FED29027025976001A9963 /* AddWishViewController.xib */,
+			);
+			path = "Add Wish Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +274,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FED28C2700DE04001A9963 /* WishProfileCell.xib in Resources */,
 				921D837626D18F060074E91F /* RegistrationViewController.xib in Resources */,
 				92DB0F8C26FDB9CF009E8C47 /* WishCell.xib in Resources */,
 				921D836826D18CED0074E91F /* LaunchScreen.storyboard in Resources */,
-				921D836526D18CED0074E91F /* Assets.xcassets in Resources */,
+				92FED29B27026048001A9963 /* Assets.xcassets in Resources */,
+				92FED29227025976001A9963 /* AddWishViewController.xib in Resources */,
 				921D836326D18CE60074E91F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DB0F8B26FDB9CF009E8C47 /* WishCell.swift in Sources */,
+				92FED29127025976001A9963 /* AddWishViewController.swift in Sources */,
 				920C1F9B26F389EE00F73BDD /* MainTabBar.swift in Sources */,
 				92DB0F9626FDE925009E8C47 /* Extentions.swift in Sources */,
 				9241679726E3F33200A2AF18 /* NetworkDataFetcher.swift in Sources */,
@@ -273,6 +304,7 @@
 				925E1C6526EA2F79000D5EDA /* RequestModel.swift in Sources */,
 				921D835C26D18CE60074E91F /* AppDelegate.swift in Sources */,
 				925E1C6926EA2FAE000D5EDA /* ResponseModel.swift in Sources */,
+				92FED28B2700DE04001A9963 /* WishProfileCell.swift in Sources */,
 				921D835E26D18CE60074E91F /* SceneDelegate.swift in Sources */,
 				928ECCB926F9F3B1003457E4 /* WishViewController.swift in Sources */,
 				9241679626E3F33200A2AF18 /* DataFetcherService.swift in Sources */,
