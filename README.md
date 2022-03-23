@@ -1,10 +1,16 @@
 <h1 align="center">MyWish</h1>
 <h2 align="center">
   
-  <p align="center">
-<img src="https://img.shields.io/npm/dy/silentlad">
-  </p>
+  <img src="./Readme-assets/1.png" style="border-width: 1px; border-style: solid;" width="25%">
   
+  <img src="./Readme-assets/2.png" style="border-width: 1px; border-style: solid;" width="25%"> 
+
+  <img src="./Readme-assets/3.png" width="25%"> 
+
+  <br>
+  <img src="./Readme-assets/4.png" width="25%"> 
+  <img src="./Readme-assets/5.png" width="25%"> 
+    
   ## Future scope
 
 - Save sensitive data in Keychain
