@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWishViewController" customModule="MyWishApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addWishButton" destination="9Ii-5c-fIb" id="teu-Zn-bnv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wishNameTextField" destination="Giq-0A-WYm" id="Eon-fT-82c"/>
+                <outlet property="wishPointTextField" destination="edT-vU-2Lg" id="23L-Ds-SAo"/>
+                <outlet property="wishTargetTextField" destination="vcu-K7-lD5" id="edb-0o-vgQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4e-OQ-8pS">
+                    <rect key="frame" x="59" y="320.5" width="217" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Giq-0A-WYm">
+                    <rect key="frame" x="59" y="346.5" width="296" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" translatesAutoresizingMaskIntoConstraints="NO" id="1da-3A-yVv">
+                    <rect key="frame" x="151" y="150.5" width="113" height="100"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для кого:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-Qd-mc0">
+                    <rect key="frame" x="59" y="400.5" width="217" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcu-K7-lD5">
+                    <rect key="frame" x="59" y="426.5" width="296" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ii-5c-fIb">
+                    <rect key="frame" x="73" y="683" width="269" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Добавить">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addWishButtonAction:" destination="-1" eventType="touchUpInside" id="WEs-Bl-BI7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Необходимо баллов:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxp-ZW-GwU">
+                    <rect key="frame" x="59" y="480.5" width="217" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edT-vU-2Lg">
+                    <rect key="frame" x="59" y="506.5" width="296" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить новый подарок" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKU-v6-MHd">
+                    <rect key="frame" x="66" y="94" width="283" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xeo-Qd-mc0" firstAttribute="top" secondItem="Giq-0A-WYm" secondAttribute="bottom" constant="20" id="0ct-yC-wOh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L4e-OQ-8pS" secondAttribute="trailing" constant="138" id="4fs-1x-Lz1"/>
+                <constraint firstItem="vcu-K7-lD5" firstAttribute="top" secondItem="Xeo-Qd-mc0" secondAttribute="bottom" constant="5" id="8N5-2p-xiF"/>
+                <constraint firstItem="L4e-OQ-8pS" firstAttribute="top" secondItem="1da-3A-yVv" secondAttribute="bottom" constant="70" id="9jy-0B-nlV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Giq-0A-WYm" secondAttribute="trailing" constant="59" id="9wd-yP-vHT"/>
+                <constraint firstItem="1da-3A-yVv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="151" id="KOz-dc-ahj"/>
+                <constraint firstItem="edT-vU-2Lg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="NTZ-Nv-Gte"/>
+                <constraint firstItem="1da-3A-yVv" firstAttribute="top" secondItem="nKU-v6-MHd" secondAttribute="bottom" constant="30" id="OXL-Mz-aud"/>
+                <constraint firstItem="Giq-0A-WYm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="QPE-fl-Svf"/>
+                <constraint firstItem="vcu-K7-lD5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="R91-FA-Npu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vcu-K7-lD5" secondAttribute="trailing" constant="59" id="RQp-MH-OE2"/>
+                <constraint firstItem="edT-vU-2Lg" firstAttribute="top" secondItem="nxp-ZW-GwU" secondAttribute="bottom" constant="5" id="WTd-D5-UNN"/>
+                <constraint firstItem="nxp-ZW-GwU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="YfO-4H-8x8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xeo-Qd-mc0" secondAttribute="trailing" constant="138" id="bVX-OX-wDr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="edT-vU-2Lg" secondAttribute="trailing" constant="59" id="cbK-6k-2uk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nxp-ZW-GwU" secondAttribute="trailing" constant="138" id="gZN-eS-O0m"/>
+                <constraint firstItem="nxp-ZW-GwU" firstAttribute="top" secondItem="vcu-K7-lD5" secondAttribute="bottom" constant="20" id="hwz-c5-rbV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nKU-v6-MHd" secondAttribute="trailing" constant="65" id="jRb-r2-XeJ"/>
+                <constraint firstItem="Xeo-Qd-mc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="kfV-CY-reS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1da-3A-yVv" secondAttribute="trailing" constant="150" id="nHa-Gp-VzA"/>
+                <constraint firstItem="L4e-OQ-8pS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="oJe-5F-9ef"/>
+                <constraint firstItem="nKU-v6-MHd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="66" id="tbi-pv-d86"/>
+                <constraint firstItem="nKU-v6-MHd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="uri-lv-Au6"/>
+                <constraint firstItem="Giq-0A-WYm" firstAttribute="top" secondItem="L4e-OQ-8pS" secondAttribute="bottom" constant="5" id="uyj-7P-CTR"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gift" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

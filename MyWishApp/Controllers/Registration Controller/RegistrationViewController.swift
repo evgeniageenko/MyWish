@@ -17,6 +17,8 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var testTextField: UITextField!
+    
     //MARK: DATA Properties
     private var userResponse: UserPostRequest?
     private var dataFetcher = DataFetcherService()
@@ -25,8 +27,8 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loginButton.layer.cornerRadius = 8
+    
+        loginButton.layer.cornerRadius = 22
     }
     
     
@@ -64,4 +66,3 @@ class RegistrationViewController: UIViewController {
         
     }
 }
-

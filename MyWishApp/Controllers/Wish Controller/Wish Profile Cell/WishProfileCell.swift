@@ -30,9 +30,11 @@ class WishProfileCell: UITableViewCell {
         
     }
 
+    
     override class func description() -> String {
         return "WishProfileCell"
     }
 
     
 }
+

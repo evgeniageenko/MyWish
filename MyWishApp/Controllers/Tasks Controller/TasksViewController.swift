@@ -30,10 +30,15 @@ class TasksViewController: UIViewController {
 //    private var daughterTasks: [String] = []
 //    lazy private var dataSourse: [String] = sonTasks
     
-    private var sonTasks: [Task] = [Task(name: "1. Помыть пол", isFavorite: false, isDone: false),
-                                    Task(name: "2. Сделать домашку", isFavorite: false, isDone: false),
-                                    Task(name: "3. Почитать книгу", isFavorite: false, isDone: false)]
-    private var daughterTasks: [Task] = [Task(name: "1. Помочь бабушке", isFavorite: false, isDone: false)]
+    private var sonTasks: [Task] = [Task(name: "Помыть пол", isFavorite: false, isDone: false),
+                                    Task(name: "Cделать домашку", isFavorite: false, isDone: false),
+                                    Task(name: "Почитать книгу", isFavorite: false, isDone: false),
+                                    Task(name: "Сходить в магазин", isFavorite: false, isDone: false),
+                                    Task(name: "Почистить картошку", isFavorite: false, isDone: false) ]
+    private var daughterTasks: [Task] = [Task(name: "Помочь бабушке", isFavorite: false, isDone: false),
+                                         Task(name: "Сделать папе массаж", isFavorite: true, isDone: false),
+                                         Task(name: "Протереть пыль в зале ", isFavorite: false, isDone: false),
+                                         Task(name: "Выучить стих", isFavorite: false, isDone: false)]
     lazy private var dataSourse: [Task] = sonTasks
     
 //  private var tasks: [Task] = ["помыть пол"].compactMap({Task(name: $0, isFavorite: false, isDone: false)})
@@ -47,7 +52,6 @@ class TasksViewController: UIViewController {
         segmentControl.addTarget(self, action: #selector(handleSegmentChange), for: .valueChanged)
         
     }
-    
     
     @objc fileprivate func handleSegmentChange() {
 
@@ -63,7 +67,7 @@ class TasksViewController: UIViewController {
     }
     
     
-    @IBAction func addWishButtonAction(_ sender: Any) {
+    @IBAction func addTaskButtonAction(_ sender: Any) {
         
         let alert = UIAlertController(title: "Новая задача", message: "Что будем делать?", preferredStyle: .alert)
         let cancel = UIAlertAction(title: "Отмена", style: .destructive) { action in }
@@ -73,15 +77,12 @@ class TasksViewController: UIViewController {
             switch segmentControl.selectedSegmentIndex {
             case 0:
                 sonTasks.append(Task(name: textField?.text ?? "", isFavorite: false, isDone: false))
-//                sonTasks.append(textField?.text ?? "")
             case 1:
                 daughterTasks.append(Task(name: textField?.text ?? "", isFavorite: false, isDone: false))
-//                daughterTasks.append(textField?.text ?? "")
             default:
                 break
                 
             }
-//            tasks.append(textField?.text ?? "")
             dataSourse.append(Task(name: textField?.text ?? "", isFavorite: false, isDone: false))
             tableView.reloadData()
         }
@@ -106,16 +107,14 @@ extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let task = dataSourse[indexPath.row]
-        cell.textLabel?.text = task.name
+        cell.textLabel?.text = "\(indexPath.row + 1). \(task.name)"
         if task.isFavorite {
             cell.backgroundColor = .systemYellow
-            cell.textLabel?.text =  task.name
         } else if task.isDone {
             cell.backgroundColor = .systemGreen
         } else {
             cell.backgroundColor = nil
         }
-        
         return cell
     }
 

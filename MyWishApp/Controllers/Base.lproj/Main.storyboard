@@ -32,23 +32,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vwU-38-0Ll">
-                                <rect key="frame" x="0.0" y="44" width="414" height="389"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dl7-te-wLg">
-                                <rect key="frame" x="307" y="709" width="81" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal">
-                                    <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45"/>
-                                </state>
-                                <connections>
-                                    <action selector="addWishButtonAction:" destination="8Nh-BR-2rd" eventType="touchUpInside" id="B84-Ro-R7o"/>
-                                    <action selector="addWishButtonAction:" destination="OfA-5S-xLQ" eventType="touchUpInside" id="pUC-GA-Wuo"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-HH-8Q2">
                                 <rect key="frame" x="0.0" y="433" width="414" height="380"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,6 +39,24 @@
                                     <constraint firstAttribute="height" constant="380" id="pYp-gp-3jQ"/>
                                 </constraints>
                             </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vwU-38-0Ll">
+                                <rect key="frame" x="0.0" y="44" width="414" height="389"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dl7-te-wLg">
+                                <rect key="frame" x="333" y="74" width="81" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.34901960780000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="gift" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTaskButtonAction:" destination="8Nh-BR-2rd" eventType="touchUpInside" id="B84-Ro-R7o"/>
+                                    <action selector="addWishButtonAction:" destination="OfA-5S-xLQ" eventType="touchUpInside" id="QJC-aJ-3At"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ini-x0-WbB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -94,8 +95,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aEs-zh-3Fy">
-                                <rect key="frame" x="307" y="709" width="81" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aEs-zh-3Fy" userLabel="Add Task Button">
+                                <rect key="frame" x="300" y="708" width="81" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal">
@@ -103,7 +104,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45"/>
                                 </state>
                                 <connections>
-                                    <action selector="addWishButtonAction:" destination="8Nh-BR-2rd" eventType="touchUpInside" id="xIr-vn-gFG"/>
+                                    <action selector="addTaskButtonAction:" destination="8Nh-BR-2rd" eventType="touchUpInside" id="xIr-vn-gFG"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R0v-eR-gip">
@@ -164,6 +165,7 @@
         <image name="baby-boy" width="48" height="48"/>
         <image name="baby-girl" width="48" height="48"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="gift" catalog="system" width="128" height="124"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">

@@ -17,7 +17,7 @@ class Extentions: UIViewController {
     }
     
     
-    
+
     func createProgressBar(_ progressView: UIProgressView) {
         progressView.progressViewStyle = .default
         progressView.setProgress(0.0, animated: false)

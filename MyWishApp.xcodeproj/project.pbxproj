@@ -177,7 +177,7 @@
 				928ECCB826F9F3B1003457E4 /* WishViewController.swift */,
 				92FED2882700DDCC001A9963 /* Wish Profile Cell */,
 				92DB0F8826FDB925009E8C47 /* Wish Cell */,
-				92FED28E27025887001A9963 /* Add Wish Controller */,
+				92FED28E27025887001A9963 /* Add New Wish Controller */,
 			);
 			path = "Wish Controller";
 			sourceTree = "<group>";
@@ -208,13 +208,13 @@
 			path = "Wish Profile Cell";
 			sourceTree = "<group>";
 		};
-		92FED28E27025887001A9963 /* Add Wish Controller */ = {
+		92FED28E27025887001A9963 /* Add New Wish Controller */ = {
 			isa = PBXGroup;
 			children = (
 				92FED28F27025976001A9963 /* AddWishViewController.swift */,
 				92FED29027025976001A9963 /* AddWishViewController.xib */,
 			);
-			path = "Add Wish Controller";
+			path = "Add New Wish Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

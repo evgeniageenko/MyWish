@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oJT-VR-czW">
-                        <rect key="frame" x="41" y="55" width="152" height="4"/>
+                        <rect key="frame" x="41" y="55" width="173" height="4"/>
                     </progressView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBS-zS-4g8">
                         <rect key="frame" x="40" y="14" width="264" height="21"/>
@@ -25,23 +25,49 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r04-c4-pCm">
+                        <rect key="frame" x="228" y="46" width="38" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="X56-B1-qNn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="aYk-tw-zWR">
+                        <rect key="frame" x="269" y="49" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="EdG-nM-eqo"/>
+                            <constraint firstAttribute="width" constant="15" id="Sau-NK-ejv"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="r04-c4-pCm" firstAttribute="top" secondItem="VBS-zS-4g8" secondAttribute="bottom" constant="11" id="KYM-jd-hK1"/>
                     <constraint firstAttribute="bottomMargin" secondItem="oJT-VR-czW" secondAttribute="bottom" constant="11" id="Np2-kf-kbB"/>
                     <constraint firstItem="oJT-VR-czW" firstAttribute="top" secondItem="VBS-zS-4g8" secondAttribute="bottom" constant="20" id="Sl4-iG-puK"/>
                     <constraint firstAttribute="trailing" secondItem="VBS-zS-4g8" secondAttribute="trailing" constant="16" id="UNU-3w-Jef"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="oJT-VR-czW" secondAttribute="trailing" constant="111" id="WNh-nf-Jpu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oJT-VR-czW" secondAttribute="trailing" constant="90" id="WNh-nf-Jpu"/>
+                    <constraint firstAttribute="bottom" secondItem="r04-c4-pCm" secondAttribute="bottom" constant="14" id="Ydi-CM-v6P"/>
                     <constraint firstItem="oJT-VR-czW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="ZPu-jm-mD5"/>
+                    <constraint firstAttribute="bottom" secondItem="aYk-tw-zWR" secondAttribute="bottom" constant="17" id="cy2-mu-Bdu"/>
+                    <constraint firstItem="aYk-tw-zWR" firstAttribute="leading" secondItem="r04-c4-pCm" secondAttribute="trailing" constant="3" id="hOo-Xc-lgE"/>
                     <constraint firstItem="VBS-zS-4g8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="oDj-yY-PqQ"/>
+                    <constraint firstItem="aYk-tw-zWR" firstAttribute="top" secondItem="VBS-zS-4g8" secondAttribute="bottom" constant="14" id="q2s-EK-HoL"/>
+                    <constraint firstItem="r04-c4-pCm" firstAttribute="leading" secondItem="oJT-VR-czW" secondAttribute="trailing" constant="14" id="xmb-Qt-HjD"/>
                     <constraint firstItem="VBS-zS-4g8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="ziG-WX-uzp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="progressLabel" destination="r04-c4-pCm" id="Rek-oP-IBJ"/>
                 <outlet property="progressView" destination="oJT-VR-czW" id="xAk-a7-eEl"/>
                 <outlet property="wishNameLabel" destination="VBS-zS-4g8" id="5kb-Hw-qXV"/>
             </connections>
             <point key="canvasLocation" x="24.637681159420293" y="98.772321428571431"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="coin" width="98" height="98"/>
+    </resources>
 </document>
